@@ -1,200 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <title>NutriCalc</title>
-
-    <link rel="icon" href="https://www.cescal.com.ar/wp-content/uploads/2018/04/cescal-bv-retina.png" type="image/jpg">
-</head>
+    <title>Calculadora rotulado</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head> 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#"><img src="./img/logo.png" alt="logo de la empresa"></a></li>
-                <li><a href="#">Calculadora</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Cescal</a></li>
-                <li><a href="#">Sign in</a></li>
-            </ul>
-        </nav>
-        <div>
-            <h1>Calculadora Nutricional</h1>
-            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor.
-            </p>
+        <div class="logo_container">
+        
         </div>
+        <nav>
+
+        </nav>
     </header>
+
     <main>
-        <section>
-            <article>
-                <header>
-                    <h2>1-Define tu producto</h2>
-                </header>
-                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha</p>
-                <form action="" method="post">
-                    <datalist id="tipos_de_productos">
-                        <option value="Productos de panificación, cereales, legumbres, raíces, tuberculos, y sus derivados"></option>
-                        <option value="Hortalizas y conservas vegetales"></option>
-                        <option value="Frutas, jugos, nectares y refrescos de frutas"></option>
-                        <option value="Leche y derivados"></option>
-                        <option value="Carnes y huevos"></option>
-                        <option value="Aceites, grasas y semillas oleaginosas"></option>
-                        <option value="Azúcares y productos con energía proveniente de carbohidratos y grasas"></option>
-                        <option value="Consumo ocasional"></option>
-                        <option value="Salsas, aderezos, caldos, sopas y platos preparados"></option>
-                    </datalist>
-                    <input list="tipos_de_productos" name="tipos_de_productos" placeholder="Busca el tipo de producto">
-                </form>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, excepturi? Perspiciatis odio a necessitatibus inventore.</p> 
-                <form action="" method="post">
-                    <select name="producto" id="product" value="Producto">
-                        
-                    </select>
-                </form>
-            </article>
-            <article>
-                <header>
-                    <h2>2-Detalla la materia prima</h2>
-                </header>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, porro.</p>
-                <form action="" method="post">
-                    <datalist id="alimentos">
-                        <option value="Almidón de maíz"></option>
-                        <option value="Amaranto"></option>
-                        <option value="Arroz blanco"></option>
-                        <option value="Arroz integral"></option>
-                        <option value="Avena arrollada"></option>
-                        <option value="Arveja semilla seca entera cruda"></option>
-                        <option value="Arveja semilla seca partida cruda o germen de trigo"></option>
-                        <option value="Barras de cereales/Turrón"></option>
-                        <option value="Bizcochos de grasa/Mantecado/Tortitas Jachaleras"></option>
-                        <option value="Bizcochos tipo Bay Biscuit//Bolitos de anis"></option>
-                        <option value="Cappelettis"></option>
-                        <option value="Copos de cereales azucarados/Ttuca/Pitufito"></option>
-                    </datalist>
-                    <input list="alimentos" name="alimentos" id="alimentosBarra" placeholder="Busca el ingrediente deseado...">
-                </form>
-            </article>
-            <article>
-                <header>
-                    <h2>3-Añade información</h2>
-                </header>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni atque rerum hic, distinctio delectus reprehenderit!</p>
-                <h3>Información nutricional adicional</h3>
-                <form action="" method="post">
-                    <select name="selectBar" id="">
-                    </select>
-                </form>
-            </article>
-            <div>
-                <form action="" method="post">
-                    <input type="submit" value="Calcular el producto">
-                    <input type="submit" value="Limpiar inventario">
-                </form>
-            </div>
-        </section>
-        <section>
-            <article>
-                <div>
-                    <header>
-                        <h2>4-Revisa los resultados de tu tabla</h2>
-                    </header>
-                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto</p>
-                </div>
-                <div>
-                    <span>Detalle</span>
-                    <span>Total del producto</span>
-                    <span>Porción</span>
-                    <span>MUC</span>
-                    <div>
-                        <span>Calorías</span>
-                        <div id="calorias_col1"></div>
-                        <div id="calorias_col2"></div>
-                        <div id="calorias_col3"></div>
-                    </div>
-                    <div>
-                        <span>Azúcares totales</span>
-                        <div id="aTotales_col1"></div>
-                        <div id="aTotales_col2"></div>
-                        <div id="aTotales_col3"></div>
-                    </div>
-                    <div>
-                        <span>Azúcares añadidos</span>
-                        <div id="aAñadidos_col1"></div>
-                        <div id="aAñadidos_col2"></div>
-                        <div id="aAñadidos_col3"></div>
-                    </div>
-                    <div>
-                        <span>Grasas totales</span>
-                        <div id="grasasT_col1"></div>
-                        <div id="grasasT_col2"></div>
-                        <div id="grasasT_col3"></div>
-                    </div>
-                    <div>
-                        <span>Grasas saturadas</span>
-                        <div id="gSaturadas_col1"></div>
-                        <div id="gSaturadas_col2"></div>
-                        <div id="gSaturadas_col3"></div>
-                    </div>
-                    <div>
-                        <span>Sodio</span>
-                        <div id="sodio_col1"></div>
-                        <div id="sodio_col2"></div>
-                        <div id="sodio_col3"></div>
-                    </div>
-                    <div>
-                        <span>Edulcorante</span>
-                        <div id="edul_col1"></div>
-                        <div id="edul_col2"></div>
-                        <div id="edul_col3"></div>
-                    </div>
-                    <div>
-                        <span>Cafeína</span>
-                        <div id="cafeina_col1"></div>
-                        <div id="cafeina_col2"></div>
-                        <div id="cafeina_col2"></div>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section>
-            <div>
-                <span>Información nutricional adicional</span>
-            </div>
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quia cumque nesciunt aperiam eius ea enim possimus, placeat delectus, illum beatae, provident dolor suscipit nam? Et labore delectus consequuntur dolorum!</p>
-            </div>
-            <div>
-                <header>
-                    <h2>5-Descarga tu tabla final</h2>
-                </header>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae praesentium voluptates officia aliquam reiciendis accusamus, nam iusto doloremque facilis atque, temporibus aperiam natus illo aspernatur maiores soluta omnis, autem cum!</p>
-                <form action="" method="post">
-                    <input type="submit" value="Descarga tu tabla">
-                </form>
-            </div>
-        </section>
+        <div class="paralax"></div>
+        <div class="main_conteiner">
+            <h2 class="titulo_secundario">Calcula tu producto</h2>
+            <section class="paso_1">
+
+            </section>
+            <section class="paso_2">
+
+            </section>
+            <section class="paso_3">
+
+            </section>
+            <section class="paso_4">
+
+            </section>
+            <section class="paso_5">
+
+            </section>
+        </div>
+
     </main>
+
     <footer>
-        <section>
-            <img src="./img/logo-footer.png" alt="logo más chico de la empresa">
-            <span>CESCAL - Todos los Derechos Reservados</span>
-        </section>
-        <section>
-            <a href="#">Inicio</a>
-            <a href="#">Organizaciones Reconocidas</a>
-            <a href="#">Políticas de privacidad</a>
-            <a href="#">Equipo de Profesionales</a>
-            <a href="#">Investigaciones</a>
-            <a href="#">Cursos Online</a>
-            <a href="#">Cursos Autogestionados</a>
-            <a href="#">Diplomaturas</a>
-            <a href="#">Noticias</a>
-            <a href="#">Contacto</a>
-            <a href="#">E-Learning</a>
-        </section>
+
     </footer>
 </body>
 </html>
