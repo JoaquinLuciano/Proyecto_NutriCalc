@@ -5,42 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora rotulado</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style type="text/css">
+        textarea{
+            resize: none;
+        }
+    </style>
 </head> 
 <body>
     <header>
         <div class="logo_container">
-            <img src="Cescal-Branding3.png" alt="cescal logo">
+            <a href="#"><img src="./img/logo.png" alt="Logo de empresa"></a>
         </div>
         <nav>
-
+            <ul>
+                <li><a href="#">Calculadora</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Investigación</a></li>
+                <li><a href="#">Sobre CESCAL</a></li>
+                <li><a href="#">Contenidos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">E-Learning</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <div class="paralax"><img src="fondo_paralax.png" alt="persona mirando rotulado" class="fondo_paralax"></div>
-        <div class="main_conteiner">
-            <h2 class="titulo_secundario">Calcula tu producto</h2>
-            <section class="paso_1">
-
-            </section>
-            <section class="paso_2">
-
-            </section>
-            <section class="paso_3">
-
-            </section>
-            <section class="paso_4">
-
-            </section>
-            <section class="paso_5">
-
-            </section>
+        <div class="parallax">
+            <h2>Calculadora de Rótulo Nutricional</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi possimus odit sapiente perspiciatis asperiores atque magni ducimus voluptas unde mollitia.</p>
         </div>
+        <section class="main_container">
+            <h2>Calcula tu producto</h2>
+            <article id="firstStep">
+                <h3>1-Define tu producto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aliquam?</p>
+                <form action="" method="">
+                    <textarea name="description" id="description" cols="30" rows="5" placeholder="Denominación de tu producto..."></textarea>
+                    <input type="search" id="typeProduct" placeholder="Busca el tipo de producto...">
+                    <input type="search" id="product" placeholder="Producto">
+                </form>
+            </article>
+            <article class="secondStep">
+                <h3>2-Detalla la materia prima</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas possimus recusandae alias dicta ut, ad vitae eos deleniti vel! Obcaecati?</p>
+                <form action="" method="">
+                    <input type="search" id="ingredient" placeholder="Busca el ingrediente deseado...">
+                    <input type="reset" id="clean" value="Limpiar inventario">
+                    <input type="submit" id="calculate" value="Calcular el producto">
+                </form>
+            </article>
+            <article class="thirdStep">
+                <h3>3-Revisa los resultados de tu tabla</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illum quam sint fugit cupiditate fugiat, nisi reprehenderit distinctio, laboriosam, doloribus numquam assumenda in consequuntur dolorum!</p>
+                <div class="titleTable">
+                    <span>Detalle</span>
+                    <span>Total del producto</span>
+                    <span>Porción</span>
+                    <span>MUC</span>
+                </div>
+                <div class="table">
+                    <div id="calories">
+                        <h4>Calorías</h4>
+                    </div>
+                    <div id="totalSugar">
+                        <h4>Azúcares totales</h4>
+                    </div>
+                    <div id="addedSugar">
+                        <h4>Azúcares añadidos</h4>
+                    </div>
+                    <div id="totalFats">
+                        <h4>Grasas totales</h4>
+                    </div>
+                    <div id="saturatedFats">
+                        <h4>Grasas saturadas</h4>
+                    </div>
+                    <div id="sodium">
+                        <h4>Sodio</h4>
+                    </div>
+                    <div id="sweetener">
+                        <h4>Edulcorante</h4>
+                    </div>
+                    <div id="caffeine">
+                        <h4>Cafeína</h4>
+                    </div>
+                </div>
+            </article>
+            <article class="fourthStep">
+                <h3>4-Añade información</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut aliquam dicta quis voluptatum. Voluptatum, rem sequi? Magni incidunt distinctio voluptate.</p>
+                <div class="toggles">
+                    <input type="checkbox" id="toggle1">
+                    <label for="toggle1">Atributos opcionales</label>
 
+                    <input type="checkbox" id="toggle2">
+                    <label for="toggle2">Información nutricional complementaria</label>
+                </div>
+            </article>
+            <article class="paso_5">
+                <h3>Descarga todo para tu rótulo final</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minima quae beatae est numquam nihil exercitationem aut magni quas consequuntur!</p>
+                <form action="" method="">
+                    <label for="download"></label>
+                    <input type="button" name="descargar" id="download" value="Descargar">
+                </form>
+            </article>
+        </section>
     </main>
 
     <footer>
-
+        <a href="#">
+            <img src="./img/logo-footer.png" alt="Logo de la empresa">
+            <p>&copy;Cescal - Todos los Derechos Reservados</p>
+        </a>
+        <div class="menuFooter">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Organizaciones Reconocidas</a></li>
+                <li><a href="#">Políticas de privacidad</a></li>
+                <li><a href="#">Equipo de Profesionales</a></li>
+                <li><a href="#">Investigaciones</a></li>
+                <li><a href="#">Cursos online</a></li>
+                <li><a href="#">Cursos autogestionados</a></li>
+                <li><a href="#">Diplomaturas</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">E-Learning</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
