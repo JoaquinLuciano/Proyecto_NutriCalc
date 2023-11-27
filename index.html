@@ -21,28 +21,62 @@
                 <nav class="header__menu">
                     <ul class="menu__options">
                         <li class="menu__option">
-                            <a href="#" class="menu__link">Calculadora</a>
+                            <a href="#" class="menu__link">
+                                <span class="menu__item--text">
+                                    <span class="menu__text">Calculadora</span>
+                                </span>
+                            </a>
                         </li>
                         <li class="menu__option">
-                            <a href="#" class="menu__link">Inicio</a>
+                            <a href="#" class="menu__link">
+                                <span class="menu__item--text">
+                                    <span class="menu__text">Inicio</span>
+                                </span>
+                            </a>
                         </li>
                         <li class="menu__option">
-                            <a href="#" class="menu__link">Cursos</a>
+                            <a href="#" class="menu__link">
+                                <a href="#" class="menu__link">
+                                    <span class="menu__item--text">
+                                        <span class="menu__text">Cursos</span>
+                                    </span>
+                                </a>    
+                            </a>
                         </li>
                         <li class="menu__option">
-                            <a href="#" class="menu__link">Investigación</a>
+                            <a href="#" class="menu__link">
+                                <span class="menu__item--text">
+                                    <span class="menu__text">Investigación</span>
+                                </span>
+                            </a>
                         </li>
                         <li class="menu__option">
-                            <a href="#" class="menu__link">Sobre CESCAL</a>
+                            <a href="#" class="menu__link">
+                                <span class="menu__item--text">
+                                    <span class="menu__text">Sobre CESCAL</span>
+                                </span>
+                            </a>
                         </li>
                         <li class="menu__option">
-                            <a href="#" class="menu__link">Contenidos</a>
+                            <a href="#" class="menu__link">
+                                <span class="menu__item--text">
+                                    <span class="menu__text">Contenidos</span>
+                                </span>
+                            </a>
                         </li>
                         <li class="menu__option">
-                            <a href="#" class="menu__link">Contacto</a>
+                            <a href="#" class="menu__link">
+                                <span class="menu__item--text">
+                                    <span class="menu__text">Contacto</span>
+                                </span>
+                            </a>
                         </li>
                         <li class="menu__option">
-                            <a href="#" class="menu__link">E-Learning</a>
+                            <a href="#" class="menu__link">
+                                <span class="menu__item--text">
+                                    <span class="menu__text">E-Learning</span>
+                                </span>
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -51,164 +85,192 @@
     
         <main class="container__principal">
             <div class="principal__parallax">
-                <h1 class="parallax__title">Calculadora de Rótulo Nutricional</h1>
-                <p class="parallax__description">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor.</p>
+                <h1 class="parallax__title">Calculadora para la Tabla de información Nutricional</h1>
+                <p class="parallax__description">Con esta calculadora podras obtener tu Tabla de información Nutricional completa, acorde  al Código Alimentario Argentino vigente. Podras usar tu tabla de información nutricional para poder colocarla en el rótulo, para la inscripción ante la Autoridad Sanitaria, para el cálculo de los sellos de advertencia. También podras ir probando la formulación/receta de producto durante el desarrollo para poder conocer si el producto tendrá sellos de advertencia. También podras obtener la información nutricional complementaria. <br>Te servira para la declaración de alimento libre de gluten y de alérgenos alimentarios. <br>Posibilidad de incorporar el atributo vegano, o la declaración de vegetariano o de origen animal.</p>
             </div>
-            <section class="principal__section">
-                <h2 class="section__title">Calcula tu producto</h2>
-                <article class="section__steps">
-                    <h3 class="steps__title">1-Define tu producto</h3>
-                    <p class="steps__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aliquam?</p>
-                    <form action="" method="" class="steps__input-1">
-                        <textarea name="description" id="description" cols="40" rows="4" placeholder="Denominación de tu producto..." class="input__description"></textarea>
-                        <div class="input__box">
-                            <div class="typeproduct__bar">
-                                <input type="text" id="typeProduct" class="typeproduct__search" placeholder="Busca el tipo de producto...">
-                                <i class="fa-solid fa-chevron-right icon__search"></i>
+            <div class="container__content">
+                <section class="content__section">
+                    <h2 class="section__title">Calcula tu producto</h2>
+                    <div class="separator"></div>
+                    <article class="section__steps">
+                        <h3 class="steps__title">1-Define tu producto</h3>
+                        <p class="steps__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aliquam?</p>
+                        <form action="" method="" class="steps__input-1">
+                            <textarea name="description" id="description" cols="40" rows="4" placeholder="Denominación de tu producto..." class="input__description"></textarea>
+                            <div class="input__box">
+                                <div class="typeproduct__bar">
+                                    <input type="text" id="typeProduct" class="typeproduct__search" placeholder="Selecciona Tipo de producto">
+                                    <i class="fa-solid fa-chevron-right icon__search"></i>
+                                </div>
+                                <div class="product__bar">
+                                    <input type="text" id="product" class="product__search" placeholder="Selecciona Producto">
+                                    <i class="fa-solid fa-chevron-right icon__search"></i>
+                                </div>
                             </div>
-                            <div class="product__bar">
-                                <input type="text" id="product" class="product__search" placeholder="Producto">
-                                <i class="fa-solid fa-chevron-right icon__search"></i>
+                        </form>
+                    </article>
+                    <article class="section__steps">
+                        <h3 class="steps__title">2-Completa la fórmula / receta de tu producto</h3>
+                        <p class="steps__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas possimus recusandae alias dicta ut, ad vitae eos deleniti vel! Obcaecati?</p>
+                        <form action="" method="" class="steps__input-2">
+                            <div class="input-2__search-bar">
+                                <input type="text" id="ingredient" class="search-bar__bar" placeholder="Busca el ingrediente deseado...">
+                                <i class="fa-solid fa-magnifying-glass search-bar__icon"></i>
+                            </div>
+                            <div class="input-2__info-btn">
+                                <div class="info-btn__clean-btn">
+                                    <i class="fa-solid fa-arrow-right fa-rotate-180 arrow__left"></i>
+                                    <input type="reset" id="clean" class="btn__reset" value="Limpiar inventario">
+                                </div>
+                                <div class="info-btn__rectangle">
+                                    <span class="rectangle__title">Total</span>
+                                    <div class="rectangle__total-info"> g</div>
+                                    <div class="rectangle__percent">0%</div>
+                                </div>
+                                <div class="info-btn__calc-btn">
+                                    <input type="submit" id="calculate" class="btn__calc" value="Calcular el producto">
+                                    <i class="fa-solid fa-arrow-right arrow__right"></i>
+                                </div>
+                            </div>
+                        </form>
+                    </article>
+                    <article class="section__steps">
+                        <h3 class="steps__title">3-Revisa los resultados de tu tabla</h3>
+                        <p class="steps__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illum quam sint fugit cupiditate fugiat, nisi reprehenderit distinctio, laboriosam, doloribus numquam assumenda in consequuntur dolorum!</p>
+                        <div class="steps__table-results">
+                            <header class="table__header">
+                                <span class="header__text">Porción</span>
+                                <span class="header__text header__text--porcion">Cantidad por 100g.</span>
+                                <span class="header__text">Cantidad por porción g</span>
+                                <span class="header__text">1 rebanada %VD</span>
+                            </header>
+                            <div class="steps__table">
+                                <div class="table__rectangle">
+                                    <h3 id="table__title">Valor energético</h3>
+                                    <div class="table__info">
+                                        <div class="table__total-product">Kcal <br> kJ</div>
+                                        <div class="table__porcion">Kcal <br> kJ</div>
+                                        <div class="table__MUC">0%</div>
+                                    </div>
+                                </div>
+                                <div class="table__rectangle">
+                                    <h3 id="table__title">Carbohidratos, de los cuales</h3>
+                                    <div class="table__info">
+                                        <div class="table__total-product">g</div>
+                                        <div class="table__porcion">g</div>
+                                        <div class="table__MUC">0%</div>
+                                    </div>
+                                </div>
+                                <div class="table__rectangle">
+                                    <h3 id="table__title">Azúcares totales</h3>
+                                    <div class="table__info">
+                                        <div class="table__total-product">X</div>
+                                        <div class="table__porcion">X</div>
+                                        <div class="table__MUC">X</div>
+                                    </div>
+                                </div>
+                                <div class="table__rectangle">
+                                    <h3 id="table__title">Azúcares añadidos</h3>
+                                    <div class="table__info">
+                                        <div class="table__total-product">X</div>
+                                        <div class="table__porcion">X</div>
+                                        <div class="table__MUC">X</div>
+                                    </div>
+                                </div>
+                                <div class="table__rectangle">
+                                    <h3 id="table__title">Proteínas</h3>
+                                    <div class="table__info">
+                                        <div class="table__total-product">g</div>
+                                        <div class="table__porcion">g</div>
+                                        <div class="table__MUC">0%</div>
+                                    </div>
+                                </div>
+                                <div class="table__rectangle">
+                                    <h3 id="table__title">Grasas totales</h3>
+                                    <div class="table__info">
+                                        <div class="table__total-product">g</div>
+                                        <div class="table__porcion">g</div>
+                                        <div class="table__MUC">0%</div>
+                                    </div>
+                                </div>
+                                <div class="table__rectangle">
+                                    <h3 id="table__title">Grasas saturadas</h3>
+                                    <div class="table__info">
+                                        <div class="table__total-product">g</div>
+                                        <div class="table__porcion">g</div>
+                                        <div class="table__MUC">0%</div>
+                                    </div>
+                                </div>
+                                <div class="table__rectangle">
+                                    <h3 id="table__title">Grasas trans</h3>
+                                    <div class="table__info">
+                                        <div class="table__total-product">g</div>
+                                        <div class="table__porcion">g</div>
+                                        <div class="table__MUC">---</div>
+                                    </div>
+                                </div>
+                                <div class="table__rectangle">
+                                    <h3 id="table__title">Fibra alimentaria</h3>
+                                    <div class="table__info">
+                                        <div class="table__total-product">g</div>
+                                        <div class="table__porcion">g</div>
+                                        <div class="table__MUC">0%</div>
+                                    </div>
+                                </div>
+                                <div class="table__rectangle">
+                                    <h3 id="table__title">Sodio</h3>
+                                    <div class="table__info">
+                                        <div class="table__total-product">mg</div>
+                                        <div class="table__porcion">mg</div>
+                                        <div class="table__MUC">0%</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </form>
-                </article>
-                <article class="section__steps">
-                    <h3 class="steps__title">2-Detalla la materia prima</h3>
-                    <p class="steps__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas possimus recusandae alias dicta ut, ad vitae eos deleniti vel! Obcaecati?</p>
-                    <form action="" method="" class="steps__input-2">
-                        <div class="input-2__search-bar">
-                            <input type="text" id="ingredient" class="search-bar__bar" placeholder="Busca el ingrediente deseado...">
-                            <i class="fa-solid fa-magnifying-glass search-bar__icon"></i>
-                        </div>
-                        <div class="input-2__info-btn">
-                            <div class="info-btn__clean-btn">
-                                <i class="fa-solid fa-arrow-right fa-rotate-180 arrow__left"></i>
-                                <input type="reset" id="clean" class="btn__reset" value="Limpiar inventario">
-                            </div>
-                            <div class="info-btn__rectangle">
-                                <span class="rectangle__title">Total</span>
-                                <div class="rectangle__total-info"> 1170g</div>
-                                <div class="rectangle__percent">100%</div>
-                            </div>
-                            <div class="info-btn__calc-btn">
-                                <input type="submit" id="calculate" class="btn__calc" value="Calcular el producto">
-                                <i class="fa-solid fa-arrow-right arrow__right"></i>
-                            </div>
-                        </div>
-                    </form>
-                </article>
-                <article class="section__steps">
-                    <h3 class="steps__title">3-Revisa los resultados de tu tabla</h3>
-                    <p class="steps__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illum quam sint fugit cupiditate fugiat, nisi reprehenderit distinctio, laboriosam, doloribus numquam assumenda in consequuntur dolorum!</p>
-                    <div class="steps__table-results">
-                        <div class="steps__table">
-                            <div class="table__rectangle">
-                                <h3 id="table__title">Calorías</h3>
-                                <div class="table__info">
-                                    <div class="table__total-product">X</div>
-                                    <div class="table__porcion">X</div>
-                                    <div class="table__MUC">X</div>
+                    </article>
+                    <div class="separator"></div>
+                    <article class="section__steps">
+                        <h3 class="steps__title">4-Añade información</h3>
+                        <div class="steps__information">
+                            <div class="information__toggle">
+                                <p class="toggle__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut aliquam dicta quis voluptatum. Voluptatum, rem sequi? Magni incidunt distinctio voluptate.</p>
+                                <div class="wrap__toggle">
+                                    <input type="checkbox" id="toggle-1" class="offscreen">
+                                    <label for="toggle-1" class="switch"></label>
+                                    <span class="toggle__text">Atributos opcionales</span>
+                                </div>
+                                <div class="wrap__toggle">
+                                    <input type="checkbox" id="toggle-2" class="offscreen">
+                                    <label for="toggle-2" class="switch"></label>
+                                    <span class="toggle__text">Información nutricional complementaria</span>
                                 </div>
                             </div>
-                            <div class="table__rectangle">
-                                <h3 id="table__title">Azúcares totales</h3>
-                                <div class="table__info">
-                                    <div class="table__total-product">X</div>
-                                    <div class="table__porcion">X</div>
-                                    <div class="table__MUC">X</div>
+                            <div class="information__rectangle">
+                                <div class="rectangle__category rectangle__black">
+                                    <span class="category__title">SELLOS</span>
                                 </div>
-                            </div>
-                            <div class="table__rectangle">
-                                <h3 id="table__title">Azúcares añadidos</h3>
-                                <div class="table__info">
-                                    <div class="table__total-product">X</div>
-                                    <div class="table__porcion">X</div>
-                                    <div class="table__MUC">X</div>
+                                <div class="rectangle__category rectangle__red">
+                                    <span class="category__title">OBLIGATORIOS</span>
                                 </div>
-                            </div>
-                            <div class="table__rectangle">
-                                <h3 id="table__title">Grasas totales</h3>
-                                <div class="table__info">
-                                    <div class="table__total-product">X</div>
-                                    <div class="table__porcion">X</div>
-                                    <div class="table__MUC">X</div>
+                                <div class="rectangle__category rectangle__green">
+                                    <span class="category__title">OPCIONALES SELECCIONADOS</span>
                                 </div>
-                            </div>
-                            <div class="table__rectangle">
-                                <h3 id="table__title">Grasas saturadas</h3>
-                                <div class="table__info">
-                                    <div class="table__total-product">X</div>
-                                    <div class="table__porcion">X</div>
-                                    <div class="table__MUC">X</div>
-                                </div>
-                            </div>
-                            <div class="table__rectangle">
-                                <h3 id="table__title">Sodio</h3>
-                                <div class="table__info">
-                                    <div class="table__total-product">X</div>
-                                    <div class="table__porcion">X</div>
-                                    <div class="table__MUC">X</div>
-                                </div>
-                            </div>
-                            <div class="table__rectangle">
-                                <h3 id="table__title">Edulcorante</h3>
-                                <div class="table__info">
-                                    <div class="table__total-product">X</div>
-                                    <div class="table__porcion">X</div>
-                                    <div class="table__MUC">X</div>
-                                </div>
-                            </div>
-                            <div class="table__rectangle">
-                                <h3 id="table__title">Cafeina</h3>
-                                <div class="table__info">
-                                    <div class="table__total-product">X</div>
-                                    <div class="table__porcion">X</div>
-                                    <div class="table__MUC">X</div>
+                                <div class="rectangle__category rectangle__gray">
+                                    <span class="category__title">OPCIONALES NO SELECCIONADOS</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                <article class="section__steps">
-                    <h3 class="steps__title">4-Añade información</h3>
-                    <div class="steps__information">
-                        <div class="information__toggle">
-                            <p class="toggle__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut aliquam dicta quis voluptatum. Voluptatum, rem sequi? Magni incidunt distinctio voluptate.</p>
-                            <div class="wrap__toggle">
-                                <input type="checkbox" id="toggle-1" class="offscreen">
-                                <label for="toggle-1" class="switch"></label>
-                                <span class="toggle__text">Atributos opcionales</span>
-                            </div>
-                            <div class="wrap__toggle">
-                                <input type="checkbox" id="toggle-2" class="offscreen">
-                                <label for="toggle-2" class="switch"></label>
-                                <span class="toggle__text">Información nutricional complementaria</span>
-                            </div>
-                        </div>
-                        <div class="information__rectangle">
-                            <div class="rectangle__category rectangle__black">
-                                <span class="category__title">SELLOS</span>
-                            </div>
-                            <div class="rectangle__category rectangle__red">
-                                <span class="category__title">OBLIGATORIOS</span>
-                            </div>
-                            <div class="rectangle__category rectangle__green">
-                                <span class="category__title">OPCIONALES SELECCIONADOS</span>
-                            </div>
-                            <div class="rectangle__category rectangle__gray">
-                                <span class="category__title">OPCIONALES NO SELECCIONADOS</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="section__step-final">
-                    <h3 class="step-final__title">Descarga todo para tu rótulo final</h3>
-                    <p class="step-final__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minima quae beatae est numquam nihil exercitationem aut magni quas consequuntur!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eos eum, accusamus harum obcaecati cupiditate ipsa suscipit possimus alias reprehenderit!</p>
-                    <form action="" method="" class="step-final__download">
-                        <input type="button" name="descargar" id="download" value="Descargar" class="download__btn">
-                    </form>
-                </article>
-            </section>
+                    </article>
+                    <div class="separator"></div>
+                    <article class="section__step-final">
+                        <h3 class="step-final__title">Descarga todo para tu rótulo final</h3>
+                        <p class="step-final__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minima quae beatae est numquam nihil exercitationem aut magni quas consequuntur!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eos eum, accusamus harum obcaecati cupiditate ipsa suscipit possimus alias reprehenderit!</p>
+                        <form action="" method="" class="step-final__download">
+                            <input type="button" name="descargar" id="download" value="Descargar" class="download__btn">
+                        </form>
+                    </article>
+                </section>
+            </div>
         </main>
     
         <footer class="container__footer">
