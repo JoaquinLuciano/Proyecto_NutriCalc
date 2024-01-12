@@ -58,6 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['idDiv']) && isset($_PO
     $tablas = array("carnes", "carnesag", "cereales", "frutas", "grasas", "huevo", "leche", "misc", "pescados", "pescadosag", "prodaz", "vegetales");
 
     // Variables para almacenar los totales
+    $totalGramos = 0;
     $totalEnergiaKJ = 0;
     $totalProteinas = 0;
     $totalGrasaTotal = 0;
@@ -94,6 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['idDiv']) && isset($_PO
                 $proporcionSodio = ($sodio * $inputValue) / 100;
 
                 // Sumar a los totales
+                $totalGramos += $inputValue;
                 $totalEnergiaKJ += $proporcionEnergiaKJ;
                 $totalProteinas += $proporcionProteinas;
                 $totalGrasaTotal += $proporcionGrasaTotal;
@@ -101,31 +103,40 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['idDiv']) && isset($_PO
                 $totalSodio += $proporcionSodio;
 
                 // Mostrar el nombre del alimento y los nuevos valores calculados
-                echo "<br>Alimento: $texto<br>";
-                echo "Proporción de Energía (KJ) a $inputValue gramos: $proporcionEnergiaKJ KJ<br>";
-                echo "Proporción de Proteínas a $inputValue gramos: $proporcionProteinas g<br>";
-                echo "Proporción de Grasa Total a $inputValue gramos: $proporcionGrasaTotal g<br>";
-                echo "Proporción de Carbohidratos Totales a $inputValue gramos: $proporcionCarbohidratosTotales g<br>";
-                echo "Proporción de Sodio a $inputValue gramos: $proporcionSodio g<br>";
+                //echo "<br>Alimento: $texto<br>";
+                //echo "Proporción de Energía (KJ) a $inputValue gramos: $proporcionEnergiaKJ KJ<br>";
+                //echo "Proporción de Proteínas a $inputValue gramos: $proporcionProteinas g<br>";
+                //echo "Proporción de Grasa Total a $inputValue gramos: $proporcionGrasaTotal g<br>";
+                //echo "Proporción de Carbohidratos Totales a $inputValue gramos: $proporcionCarbohidratosTotales g<br>";
+                //echo "Proporción de Sodio a $inputValue gramos: $proporcionSodio g<br>";
 
                 $encontrado = true;
                 break; // Terminar el bucle ya que se encontró el resultado
             }
         }
-        
 
+        
+        
         if (!$encontrado) {
             // Manejar el caso en que no se encuentre el resultado en ninguna tabla
             echo "El alimento '$texto' no se encontró en ninguna tabla.";
         }
     }
 
+    // Calcular los nuevos valores basados en la cantidad ingresada a 100g
+    $totalEnergiaKJ100g = number_format((100 * $totalEnergiaKJ) / $totalGramos, 2, ',','');
+    $totalProteinas100g = number_format((100 * $totalProteinas) / $totalGramos, 2, ',','');
+    $totalGrasaTotal100g = number_format((100 * $totalGrasaTotal) / $totalGramos, 2, ',','');
+    $totalCarbohidratosTotales100g = number_format((100 * $totalCarbohidratosTotales) / $totalGramos, 2, ',','');
+    $totalSodio100g = number_format((100 * $totalSodio) / $totalGramos, 2, ',','');
+
     // Mostrar el total de cada nutriente
-    echo "<br>Total de Energía (KJ): $totalEnergiaKJ KJ<br>";
-    echo "Total de Proteínas: $totalProteinas g<br>";
-    echo "Total de Grasa Total: $totalGrasaTotal g<br>";
-    echo "Total de Carbohidratos Totales: $totalCarbohidratosTotales g<br>";
-    echo "Total de Sodio: $totalSodio g<br>";
+    //echo "<br>Total de gramos del producto: $totalGramos g<br>";
+    //echo "<br>Total de Energía (KJ): $totalEnergiaKJ KJ<br>";
+    //echo "Total de Proteínas: $totalProteinas g<br>";
+    //echo "Total de Grasa Total: $totalGrasaTotal g<br>";
+    //echo "Total de Carbohidratos Totales: $totalCarbohidratosTotales g<br>";
+    //echo "Total de Sodio: $totalSodio g<br>";
 }
 
 

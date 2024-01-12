@@ -85,7 +85,14 @@
             </div>
         </header>
 
-        <?php include('config.php'); include('request.php');?>
+        <?php 
+        include('config.php'); 
+        include('request.php');
+        
+        error_reporting(0);
+        ini_set('display_errors', 0);
+
+        ?>
     
         <main class="container__principal">
             <div class="principal__parallax">
@@ -183,6 +190,7 @@
 
                     <!------------------------------------------------------------------------------------------------------------------->
 
+
                     <article class="section__steps">
                         <h3 class="steps__title">3-Revisa los resultados de tu tabla</h3>
                         <p class="steps__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illum quam sint fugit cupiditate fugiat, nisi reprehenderit distinctio, laboriosam, doloribus numquam assumenda in consequuntur dolorum!</p>
@@ -190,23 +198,23 @@
                             <header class="table__header">
                                 <span class="header__text"></span>
                                 <span class="header__text header__text--porcion">Cantidad por 100g.</span>
-                                <span class="header__text">Cantidad por porción g</span>
+                                <?php echo "<span class='header__text'>Cantidad por porción $totalGramos g</span>" ?>
                                 <span class="header__text">%VD</span>
                             </header>
                             <div class="steps__table">
                                 <div class="table__rectangle">
                                     <h3 id="table__title">Valor energético</h3>
                                     <div class="table__info">
-                                        <div class="table__total-product">Kcal <br> kJ</div>
-                                        <div class="table__porcion">Kcal <br> kJ</div>
+                                        <?php echo "<div class='table__total-product'>$totalEnergiaKJ100g KJ</div>" ?>
+                                        <?php echo "<div class='table__porcion'>$totalEnergiaKJ KJ</div>" ?>
                                         <div class="table__MUC">0%</div>
                                     </div>
                                 </div>
                                 <div class="table__rectangle">
                                     <h3 id="table__title">Carbohidratos, de los cuales</h3>
                                     <div class="table__info">
-                                        <div class="table__total-product">g</div>
-                                        <div class="table__porcion">g</div>
+                                        <?php echo "<div class='table__total-product'>$totalCarbohidratosTotales100g g</div>" ?>
+                                        <?php echo "<div class='table__porcion'>$totalCarbohidratosTotales g</div>" ?>
                                         <div class="table__MUC">0%</div>
                                     </div>
                                 </div>
@@ -229,16 +237,16 @@
                                 <div class="table__rectangle">
                                     <h3 id="table__title">Proteínas</h3>
                                     <div class="table__info">
-                                        <div class="table__total-product">g</div>
-                                        <div class="table__porcion">g</div>
+                                        <?php echo "<div class='table__total-product'>$totalProteinas100g g</div>" ?>
+                                        <?php echo "<div class='table__porcion'>$totalProteinas g</div>" ?>
                                         <div class="table__MUC">0%</div>
                                     </div>
                                 </div>
                                 <div class="table__rectangle">
                                     <h3 id="table__title">Grasas totales</h3>
                                     <div class="table__info">
-                                        <div class="table__total-product">g</div>
-                                        <div class="table__porcion">g</div>
+                                        <?php echo "<div class='table__total-product'>$totalGrasaTotal100g g</div>" ?>
+                                        <?php echo "<div class='table__porcion'>$totalGrasaTotal g</div>" ?>
                                         <div class="table__MUC">0%</div>
                                     </div>
                                 </div>
@@ -269,8 +277,8 @@
                                 <div class="table__rectangle">
                                     <h3 id="table__title">Sodio</h3>
                                     <div class="table__info">
-                                        <div class="table__total-product">mg</div>
-                                        <div class="table__porcion">mg</div>
+                                        <?php echo "<div class='table__total-product'>$totalSodio100g mg</div>" ?>
+                                        <?php echo "<div class='table__porcion'>$totalSodio mg</div>" ?>
                                         <div class="table__MUC">0%</div>
                                     </div>
                                 </div>
